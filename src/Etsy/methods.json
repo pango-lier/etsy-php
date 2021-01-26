@@ -4292,5 +4292,45 @@
     "type": "Treasury",
     "visibility": "public",
     "http_method": "GET"
+  },
+  "getVariationImages": {
+    "name": "getVariationImages",
+    "description": "Retrieves a variation images.",
+    "uri": "/listings/:listing_id/variation-images",
+    "params": {
+      "listing_id": "int"
+    },
+    "defaults": {
+    },
+    "type": "variation",
+    "visibility": "private",
+    "http_method": "GET"
+  },
+  "updateVariationImages": {
+    "name": "updateVariationImages",
+    "description": "update variation images on a listing.",
+    "uri": "/listings/:listing_id/variation-images",
+    "params": {
+      "listing_id": "int",
+      "variation_images": "string"
+    },
+    "defaults": {
+    },
+    "type": "variation",
+    "visibility": "private",
+    "http_method": "POST"
+  },
+  "getVariations": {
+    "name": "getVariations",
+    "description": "Get variation images information .",
+    "uri": "/listings/:listing_id/?includes=Variations",
+    "params": {
+      "listing_id": "int"
+    },
+    "defaults": {
+    },
+    "type": "variation",
+    "visibility": "private",
+    "http_method": "GET"
   }
 }
